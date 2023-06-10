@@ -5,16 +5,16 @@
 			"Yardom78"
 		]
 	},
-	"miraheze-centralauth-login-error-locked": "{{GENDER:$1|Váš}} účet nie je možné prihlásiť, pretože {{GENDER:$1|Váš}} účet je globálne uzamknutý. Prosím kontaktujte <code>cvt[na]miraheze.org</code> pre viac informácií, alebo pre žiadosť o odomknutie.",
-	"miraheze-dberr-again": "Skúste počkať niekoľko minúť a načítajte znovu. Pre viac informácií o tejto chybe navštívte našu twitter stránku (https://twitter.com/Miraheze) alebo kontaktujte správcu systému #miraheze na irc.libera.chat.",
-	"miraheze-importtext": "Prosím exportujte súbor zo zdroja wiki použitím [[Special:Export|nástroje pre export]].\nUložte ho do Vášho počítača a nahrajte sem. <br /> Prosím berte na vedomie, že ak je súbor väčší než (~ >5MB) musíte požiadať o import tu -> [[M:Moving_a_wiki_to_Miraheze#Request_import]].",
-	"miraheze-newsignuppage-loginform-tos": "Čítal/a som, rozumiem a súhlasím s [https://meta.miraheze.org/wiki/Terms_of_Use Podmienkami používania] a so [https://meta.miraheze.org/wiki/Privacy_Policy Zásadami ochrany súkromia]",
-	"miraheze-newsignuppage-must-accept-tos": "Pre vytvorenie účtu musíte súhlasiť s podmienkami používania!",
-	"miraheze-oathauth-step1": "DÔLEŽITÉ! Prosím prečítajte si stránku OATHAuth pred tým než toto povolíte! Krok 1: Stiahnite si dvoj faktorový autentifikačný program",
-	"miraheze-prefs-help-realname": "Skutočné meno nie je povinné. Ak sa rozhodnete ho uviesť, bude uvádzané pri Vašej práci. Taktiež používaním Miraheze súhlasíte s<span class=\"plainlinks\">[https://meta.miraheze.org/wiki/Terms_of_Use Podmienkami používania]</span> a súhlasíte so <span class=\"plainlinks\">[https://meta.miraheze.org/wiki/Privacy_Policy Zásadami ochrany súkromia]</span>.",
-	"miraheze-restriction-delete": "Vymazať",
-	"miraheze-restriction-protect": "Chrániť",
-	"miraheze-skinname-snapwikiskin": "Prásk!",
-	"miraheze-snapwikiskin": "Prásk!",
-	"miraheze-wikibase-sitelinks-miraheze": "Wiki na Miraheze"
+	"WikiTide-centralauth-login-error-locked": "{{GENDER:$1|Váš}} účet nie je možné prihlásiť, pretože {{GENDER:$1|Váš}} účet je globálne uzamknutý. Prosím kontaktujte <code>cvt[na]WikiTide.org</code> pre viac informácií, alebo pre žiadosť o odomknutie.",
+	"WikiTide-dberr-again": "Skúste počkať niekoľko minúť a načítajte znovu. Pre viac informácií o tejto chybe navštívte našu twitter stránku (https://twitter.com/WikiTide) alebo kontaktujte správcu systému #WikiTide na irc.libera.chat.",
+	"WikiTide-importtext": "Prosím exportujte súbor zo zdroja wiki použitím [[Special:Export|nástroje pre export]].\nUložte ho do Vášho počítača a nahrajte sem. <br /> Prosím berte na vedomie, že ak je súbor väčší než (~ >5MB) musíte požiadať o import tu -> [[M:Moving_a_wiki_to_WikiTide#Request_import]].",
+	"WikiTide-newsignuppage-loginform-tos": "Čítal/a som, rozumiem a súhlasím s [https://meta.WikiTide.org/wiki/Terms_of_Use Podmienkami používania] a so [https://meta.WikiTide.org/wiki/Privacy_Policy Zásadami ochrany súkromia]",
+	"WikiTide-newsignuppage-must-accept-tos": "Pre vytvorenie účtu musíte súhlasiť s podmienkami používania!",
+	"WikiTide-oathauth-step1": "DÔLEŽITÉ! Prosím prečítajte si stránku OATHAuth pred tým než toto povolíte! Krok 1: Stiahnite si dvoj faktorový autentifikačný program",
+	"WikiTide-prefs-help-realname": "Skutočné meno nie je povinné. Ak sa rozhodnete ho uviesť, bude uvádzané pri Vašej práci. Taktiež používaním WikiTide súhlasíte s<span class=\"plainlinks\">[https://meta.WikiTide.org/wiki/Terms_of_Use Podmienkami používania]</span> a súhlasíte so <span class=\"plainlinks\">[https://meta.WikiTide.org/wiki/Privacy_Policy Zásadami ochrany súkromia]</span>.",
+	"WikiTide-restriction-delete": "Vymazať",
+	"WikiTide-restriction-protect": "Chrániť",
+	"WikiTide-skinname-snapwikiskin": "Prásk!",
+	"WikiTide-snapwikiskin": "Prásk!",
+	"WikiTide-wikibase-sitelinks-WikiTide": "Wiki na WikiTide"
 }

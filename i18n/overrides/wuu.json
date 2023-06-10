@@ -4,11 +4,11 @@
 			"城市酸儒文人挖坑"
 		]
 	},
-	"miraheze-centralauth-groupname": "Miraheze",
-	"miraheze-centralauth-login-error-locked": "{{GENDER:$1|侬}}弗好登录因为{{GENDER:$1|侬个}}账号被畀全域锁定。请联系 <code>cvt[at]miraheze.org</code> 获取更多信息或者申诉",
-	"miraheze-newsignuppage-loginform-tos": "我已阅读并且同意\n[https://meta.miraheze.org/wiki/Terms_of_Use 使用条款]搭仔[https://meta.miraheze.org/wiki/Privacy_Policy 隐私政策]",
-	"miraheze-newsignuppage-must-accept-tos": "侬一定要先接受使用条款才可以创建新个账户。",
-	"miraheze-restriction-delete": "删除",
-	"miraheze-restriction-protect": "保护",
-	"miraheze-wikibase-sitelinks-miraheze": "勒Miraheze上头个维基"
+	"WikiTide-centralauth-groupname": "WikiTide",
+	"WikiTide-centralauth-login-error-locked": "{{GENDER:$1|侬}}弗好登录因为{{GENDER:$1|侬个}}账号被畀全域锁定。请联系 <code>cvt[at]WikiTide.org</code> 获取更多信息或者申诉",
+	"WikiTide-newsignuppage-loginform-tos": "我已阅读并且同意\n[https://meta.WikiTide.org/wiki/Terms_of_Use 使用条款]搭仔[https://meta.WikiTide.org/wiki/Privacy_Policy 隐私政策]",
+	"WikiTide-newsignuppage-must-accept-tos": "侬一定要先接受使用条款才可以创建新个账户。",
+	"WikiTide-restriction-delete": "删除",
+	"WikiTide-restriction-protect": "保护",
+	"WikiTide-wikibase-sitelinks-WikiTide": "勒WikiTide上头个维基"
 }
