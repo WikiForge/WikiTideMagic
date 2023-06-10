@@ -11,8 +11,8 @@
 		"Southparkfan",
 		"Universal Omega"
 	],
-	"url": "//github.com/WikiTide/WikiTideMagic",
-	"descriptionmsg": "WikiTidemagic-description",
+	"url": "//github.com/WikiForge/WikiTideMagic",
+	"descriptionmsg": "wikitidemagic-description",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
 	"requires": {
