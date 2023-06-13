@@ -14,7 +14,6 @@ use MediaWiki\Hook\SkinAddFooterLinksHook;
 use MediaWiki\Linker\Hook\HtmlPageLinkRendererEndHook;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\Hook\TitleReadWhitelistHook;
-use MediaWiki\Permissions\Hook\UserGetRightsRemoveHook
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\User\UserOptionsManager;
 use Miraheze\CreateWiki\Hooks\CreateWikiDeletionHook;
@@ -42,8 +41,7 @@ class WikiTideMagicHooks implements
 	MessageCache__getHook,
 	SiteNoticeAfterHook,
 	SkinAddFooterLinksHook,
-	TitleReadWhitelistHook,
-	UserGetRightsRemoveHook
+	TitleReadWhitelistHook
 {
 
 	/** @var ServiceOptions */
@@ -86,7 +84,6 @@ class WikiTideMagicHooks implements
 					'LocalDatabases',
 					'ManageWikiSettings',
 					'ObjectCaches',
-					'WikiTideMagicSREAccessIds',
 				],
 				$mainConfig
 			),
@@ -449,21 +446,6 @@ class WikiTideMagicHooks implements
 		if ( $key === 'places' ) {
 			$footerItems['termsofservice'] = $this->addFooterLink( $skin, 'termsofservice', 'termsofservicepage' );
 			$footerItems['donate'] = $this->addFooterLink( $skin, 'wikitide-donate', 'wikitide-donatepage' );
-		}
-	}
-
-	public function onUserGetRightsRemove( $user, &$rights ) {
-		// Remove read from non-SRE on srewiki.
-		if ( WikiMap::getCurrentWikiId() === 'srewiki' && $user->isRegistered() ) {
-			$centralAuthUser = CentralAuthUser::getInstance( $user );
-
-			if ( $centralAuthUser &&
-				$centralAuthUser->exists() &&
-				!in_array( $centralAuthUser->getId(), $this->options->get( 'WikiTideMagicSREAccessIds' ) )
-			) {
-				$rights = array_unique( $rights );
-				unset( $rights[array_search( 'read', $rights )] );
-			}
 		}
 	}
 
