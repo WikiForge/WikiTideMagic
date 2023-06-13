@@ -33,10 +33,6 @@
 			"description": "String. TSPortal write key to be used when connecting to it.",
 			"value": ""
 		},
-		"WikiTideMagicSREAccessIds": {
-			"description": "Array. Usernames of users authorised to access srewiki.",
-			"value": []
-		},
 		"WikiTideSurveyEnabled": {
 			"description": "Boolean. Enable WikiTide Annual Survey?",
 			"value": true
@@ -131,9 +127,6 @@
 			"handler": "WikiTideMagicHooks"
 		],
 		"TitleReadWhitelist": [
-			"handler": "WikiTideMagicHooks"
-		],
-		"UserGetRightsRemove": [
 			"handler": "WikiTideMagicHooks"
 		]
 	},
