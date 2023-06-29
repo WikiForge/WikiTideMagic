@@ -323,7 +323,6 @@ class WikiTideMagicHooks implements
 		}
 	}
 
-
 	/**
 	 * From WikimediaMessages
 	 * When core requests certain messages, change the key to a WikiTide version.
