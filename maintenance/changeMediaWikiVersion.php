@@ -100,7 +100,7 @@ class ChangeMediaWikiVersion extends Maintenance {
 			} else {
 				$escapedPattern = $delimiter . $this->escapePattern( $pattern, $delimiter ) . $delimiter;
 			}
-		
+
 			if ( preg_match( $escapedPattern, $dbName ) ) {
 				$matchingDbNames[] = $dbName;
 			}
