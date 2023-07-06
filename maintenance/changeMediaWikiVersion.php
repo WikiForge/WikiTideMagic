@@ -96,9 +96,9 @@ class ChangeMediaWikiVersion extends Maintenance {
 			$delimiter = '/';
 
 			if ( substr( $pattern, 0, 1 ) === $delimiter && substr( $pattern, -1 ) === $delimiter ) {
-				$escapedPattern = $pattern;
+				$escapedPattern = escapeshellcmd( $pattern );
 			} else {
-				$escapedPattern = $delimiter . $this->escapePattern( $pattern, $delimiter ) . $delimiter;
+				$escapedPattern = $delimiter . escapeshellcmd( $pattern ) . $delimiter;
 			}
 
 			if ( preg_match( $escapedPattern, $dbName ) ) {
@@ -107,33 +107,6 @@ class ChangeMediaWikiVersion extends Maintenance {
 		}
 
 		return $matchingDbNames;
-	}
-
-	private function escapePattern( string $pattern ): string {
-		$escapedPattern = '';
-		$isEscaped = false;
-		$length = strlen( $pattern );
-
-		for ( $i = 0; $i < $length; $i++ ) {
-			$char = $pattern[$i];
-
-			if ( $char === '\\' ) {
-				if ( $isEscaped ) {
-					// Double escape the backslash if it's already escaped
-					$escapedPattern .= '\\\\';
-					$isEscaped = false;
-				} else {
-					// Escape the backslash
-					$isEscaped = true;
-					$escapedPattern .= '\\\\';
-				}
-			} else {
-				$isEscaped = false;
-				$escapedPattern .= $char;
-			}
-		}
-
-		return $escapedPattern;
 	}
 }
 
