@@ -49,7 +49,6 @@ class GenerateS3Backup extends Maintenance {
 			'Prefix' => $wiki,
 		] );
 
-		$usage = 0;
 		foreach ( $objects as $object ) {
 			$client->getObject( [
 				'Bucket' => $bucketName,
