@@ -18,7 +18,7 @@ class GenerateS3Backup extends Maintenance {
 
 		// Available disk space must be 5GB
 		$df = disk_free_space( '/tmp' );
-		if ($df < 5 * 1024 * 1024 * 1024) {
+		if ( $df < 5 * 1024 * 1024 * 1024 ) {
 			$this->error( "Not enough disk space available (< 5GB). Aborting dump.\n" );
 			return;
 		}
