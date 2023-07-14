@@ -2,6 +2,10 @@
 	"name": "wikiforge/wikitidemagic",
 	"description": "",
 	"license": "GPL-3.0-or-later",
+	"require": {
+		"composer/installers": ">=1.0.1",
+		"aws/aws-sdk-php": "*"
+	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "41.0.0",
 		"mediawiki/mediawiki-phan-config": "0.12.1",
@@ -21,5 +25,12 @@
 		],
 		"phan": "phan -d . --long-progress-bar",
 		"phpcs": "phpcs -sp --cache"
+	},
+	"config": {
+		"prepend-autoloader": false,
+		"optimize-autoloader": true,
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
