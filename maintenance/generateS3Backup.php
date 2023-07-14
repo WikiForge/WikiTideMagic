@@ -58,6 +58,7 @@ class GenerateS3Backup extends Maintenance {
 		}
 
 		// Compress S3 object (.tar.gz)
+		// phpcs:ignore MediaWiki.Usage.ForbiddenFunctions.shell_exec
 		shell_exec( "tar -czf /tmp/{$this->getOption('filename')} /tmp/$wiki --remove-files" );
 
 		$this->output( "Amazon S3 dump backup for $wiki complete!\n" );
